@@ -32,4 +32,59 @@ public class Students {
 	
 	@Column(name = "user_name", nullable = false)
 	private String userName ;
+	
+	 // Getter and Setter for id
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    // Getter and Setter for engname
+    public String getEngname() {
+        return engname;
+    }
+
+    public void setEngname(String engname) {
+        this.engname = engname;
+    }
+
+    // Getter and Setter for email
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    // Getter and Setter for faculty
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
+
+    // Getter and Setter for type
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    // Getter and Setter for userName
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
 }
