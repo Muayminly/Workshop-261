@@ -1,0 +1,165 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* Gradient background */
+    background-size: cover; /* Make the background cover the entire screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container styling */
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Form elements */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+    background-color: #0056b3;
+}
+
+/* Placeholder styling for accessibility */
+::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Additional text or messages */
+p#message {
+    margin-top: 10px;
+    color: red;
+}
+
+/* Password visibility icon container */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+/* Disabled button styling */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Show data section styling */
+.showdata {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for a soft look */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+    display: none; /* Hide until login */
+}
+
+/* Enhance show data content */
+.showdata h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.showdata p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.showdata strong {
+    font-weight: bold;
+}
+
+/* Optionally, add a subtle animation to the login form */
+.login-container {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Fade-in animation for the login form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
